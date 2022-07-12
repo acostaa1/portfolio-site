@@ -1,9 +1,26 @@
+import React from 'react';
 
+import "./app.scss"
+import Nav from './components/nav-bar/Nav';
+import About from './components/about-me/About';
+import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact-me/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="app">
-      What's Up I'm Angel
+      <Nav />
+      <div className="sections">
+        Welcome to My Site!
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+
+      <Footer />
     </div>
   );
 }
