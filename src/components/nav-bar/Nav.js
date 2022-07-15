@@ -6,7 +6,7 @@ export default function Nav() {
     <div className="nav">
       <div className="wrapper">
         <div className="left">
-          <a href="#home"></a>
+          <a href="#home">Home</a>
         </div>
         <div className="right"></div>
       </div>

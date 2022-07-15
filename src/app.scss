@@ -7,7 +7,17 @@
     background-color: lightblue;
     position: relative;
     top: 50px;
+    //scrolling effects
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    //take out the scroll bar on all browsers! 
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+    
 
     > * {
       width: 100vw;
