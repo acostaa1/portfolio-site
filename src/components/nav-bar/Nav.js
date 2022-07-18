@@ -1,10 +1,10 @@
 import React from 'react';
 import './nav.scss';
-import {Menu} from "@mui/icons-material"
+// import {Menu} from "@mui/icons-material"
 
-export default function Nav() {
+export default function Nav({menuOpen, setMenuOpen}) {
   return (
-    <div className="nav">
+    <div className={"nav " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#home" className="logo">
@@ -13,11 +13,10 @@ export default function Nav() {
           </a>
         </div>
         <div className="right">
-          <div className="menu">
-            <Menu/>
-            {/* <span className="line1"></span>
+          <div className="menu" onClick={()=> setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
             <span className="line2"></span>
-            <span className="line3"></span> */}
+            <span className="line3"></span>
           </div>
         </div>
       </div>

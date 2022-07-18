@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import "./app.scss"
 import Nav from './components/nav-bar/Nav';
@@ -10,9 +10,10 @@ import Contact from './components/contact-me/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
-      <Nav />
+      <Nav menuOpen= {menuOpen} setMenuOpen= {setMenuOpen}/>
       <div className="sections">
         Welcome to My Site!
         <Home />

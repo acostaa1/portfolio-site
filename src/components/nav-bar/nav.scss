@@ -6,6 +6,7 @@
   position: fixed;
   // top: 0;
   z-index: 2;
+  transition: all 1s ease;
 
   .wrapper{
     padding:10px 30px;
@@ -28,13 +29,42 @@
         height: 25px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        cursor: pointer;
 
-        // span{
-        //   width: 100%;
-        //   height: 3px;
-        //   background-color: darkblue;
-        // }
+        span{
+          width: 100%;
+          height: 3px;
+          background-color: darkblue;
+          //this will allow the menu to rotate from the leftm otherwise it would be center
+          transform-origin: left;
+          //the animation when the menu is clicked
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+  // when the menu is clicked
+  &.active{
+    background-color: darkblue;
+    color: white;
+
+    .menu{
+      span {
+        //the first line in the span (line1)
+        &:first-child{
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        //this is the second line in the span (line2)
+        &:nth-child(2){
+          opacity: 0;
+        }
+        //the last line in the span (line3)
+        &:last-child{
+          background-color: white;
+          transform: rotate(-45deg);
+        }
       }
     }
   }
