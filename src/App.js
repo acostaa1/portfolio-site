@@ -8,18 +8,21 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact-me/Contact';
 import Footer from './components/footer/Footer';
+import Menu from './components/menu/Menu';
+import Resume from './components/resume/Resume';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
       <Nav menuOpen= {menuOpen} setMenuOpen= {setMenuOpen}/>
+      <Menu menuOpen= {menuOpen} setMenuOpen= {setMenuOpen}/>
       <div className="sections">
-        Welcome to My Site!
         <Home />
         <About />
         <Skills />
         <Projects />
+        <Resume />
         <Contact />
       </div>
 
