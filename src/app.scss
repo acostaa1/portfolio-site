@@ -3,10 +3,11 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 85px);
     background-color: lightblue;
     position: relative;
-    top: 50px;
+    //size of each secrtion page from the top
+    top: 85px;
     //scrolling effects
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -21,7 +22,7 @@
 
     > * {
       width: 100vw;
-      height: calc(100vh - 50px);
+      height: calc(100vh - 85px );
       scroll-snap-align: start;
     }
   }

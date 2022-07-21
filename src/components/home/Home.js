@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './home.scss';
+import { init } from 'ityped';
 
 export default function Home() {
+  const textRef = useRef();
+
+  useEffect(() => {
+    
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      loop: false,
+      
+      strings: ['Software Engineer', 'Poker Player', 'Cat Dad', 'Software Engineer'],
+    });
+  }, []);
   return (
+    
     <div className="home" id="home">
       <div className="left">
         <div className="profile-pic">
@@ -13,7 +27,9 @@ export default function Home() {
         <div className="wrapper">
           <h2> Hey, I'm</h2>
           <h1> Angel Acosta</h1>
-          <h3> Fullstack Software Engineer</h3>
+          <h3>
+             NYC Based <span ref={textRef}>  </span>
+          </h3>
           <a href="#about">
             <img src="portfolio_logos/arrow-down.png" alt="" />
           </a>
