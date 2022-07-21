@@ -8,8 +8,7 @@ export default function Nav({menuOpen, setMenuOpen}) {
       <div className="wrapper">
         <div className="left">
           <a href="#home" className="logo">
-            {`< A A / >`}
-            {/* <img src= "public/portfolio_logos/angel-logo-2.png" alt="logo"></img> */}
+            <img src= "portfolio_logos/angel-logo-2.png" alt="logo"></img>
           </a>
         </div>
         <div className="right">
