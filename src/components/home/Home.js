@@ -12,7 +12,7 @@ export default function Home() {
       backDelay: 1500,
       loop: false,
       
-      strings: ['Software Engineer', 'Poker Player', 'Cat Dad', 'Software Engineer'],
+      strings: ['Software Engineer', 'Poker Player', 'Cat Dad', 'Software Engineer 💻'],
     });
   }, []);
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2> Hey, I'm</h2>
+          <h2> Hello 👋🏽 ! I'm </h2>
           <h1> Angel Acosta</h1>
           <h3>
              NYC Based <span ref={textRef}>  </span>
