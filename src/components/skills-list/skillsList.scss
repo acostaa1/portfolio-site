@@ -1,0 +1,13 @@
+.skills_list {
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  &.active {
+    background-color: grey;
+    color: white;
+  }
+}
