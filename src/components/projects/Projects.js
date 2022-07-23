@@ -4,7 +4,8 @@ import './projects.scss'
 export default function Projects() {
   return (
     <div className = "projects" id = "projects">
-      PROJECTS
+      <h1>Projects</h1>
+      
     </div>
   )
 }

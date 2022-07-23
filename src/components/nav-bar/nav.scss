@@ -58,13 +58,13 @@
   // when the menu is clicked
   &.active{
     background-color: lightgray;
-    color: white;
+    //color: black;
 
     .menu{
       span {
         //the first line in the span (line1)
         &:first-child{
-          background-color: white;
+          background-color: black;
           transform: rotate(45deg);
         }
         //this is the second line in the span (line2)
@@ -73,7 +73,7 @@
         }
         //the last line in the span (line3)
         &:last-child{
-          background-color: white;
+          background-color: black;
           transform: rotate(-45deg);
         }
       }
