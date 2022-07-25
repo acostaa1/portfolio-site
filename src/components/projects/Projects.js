@@ -34,6 +34,9 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <a href="#resume">
+        <img src="portfolio_logos/arrow-down.png" alt="" />
+      </a>
     </div>
   );
 }

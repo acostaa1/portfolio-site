@@ -7,7 +7,7 @@
 
   h1 {
     font-size: 50px;
- 
+    //overflow: hidden;
   }
 
   .container {
@@ -31,12 +31,12 @@
       transition: all 1s ease;
 
       &:hover {
-        transform: scale(1.1)
+        transform: scale(1.1);
       }
 
       .center {
         img {
-          width:  425px;
+          width: 425px;
           height: 250px;
         }
       }
@@ -53,9 +53,8 @@
         a {
           text-decoration: none;
           color: black;
-          
         }
-        
+
         .left {
           margin-right: 5px;
         }
@@ -63,6 +62,21 @@
         .right {
           margin-left: 5px;
         }
+      }
+    }
+  }
+  // down-arrow
+  a {
+    margin-top: 10px;
+
+    img {
+      width: 30px;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
       }
     }
   }

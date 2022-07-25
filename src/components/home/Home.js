@@ -20,7 +20,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="profile-pic">
-          <img src="portfolio_logos/angel-profile.png" alt="" />
+          <img src="portfolio_logos/angel-profile-pic.png" alt="" />
         </div>
       </div>
       <div className="right">
