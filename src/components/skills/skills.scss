@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   h1 {
     font-size: 50px;
@@ -12,6 +13,7 @@
     margin-top: 30px;
     padding: 0;
     display: flex;
+    
     // list-style: none;
 
   }
@@ -23,6 +25,7 @@
     justify-content: center;
     margin-top: 75px;
     flex-wrap: wrap;
+    overflow: hidden;
 
     .item {
       width: 220px;
@@ -36,6 +39,9 @@
         width: 95px;
         height: 95px;
         margin-bottom: 5px;
+
+        
+
       }
 
       h3 {
@@ -50,6 +56,7 @@
   a {
     
     margin-top: 50px;
+    overflow: hidden;
 
     img {
       width: 30px;

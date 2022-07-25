@@ -15,7 +15,7 @@ export default function Home() {
         'Software Engineer',
         'Poker Player',
         'Cat Dad',
-        'Software Engineer 💻',
+        'Software Engineer',
       ],
     });
   }, []);

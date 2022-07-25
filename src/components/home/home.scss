@@ -1,7 +1,14 @@
+@import '../../global.scss';
+
 .home {
   background-color: white;
   display: flex;
-  
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -21,6 +28,12 @@
       float: right;
       margin-top: 50px;
 
+      @include mobile {
+        align-items: center;
+        width: 330px;
+        height: 330px;
+      }
+
       img {
         width: 97%;
       }
@@ -30,6 +43,10 @@
     flex: 0.5;
     position: relative;
 
+    @include mobile {
+      flex: 0.3;
+    }
+
     .wrapper {
       width: 100%;
       height: 100%;
@@ -38,15 +55,32 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 0px;
+        align-items: center;
+      }
+
       h1 {
         font-size: 70px;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 25px;
+        }
       }
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 25px;
+        }
 
         span {
           color: grey;
@@ -62,8 +96,6 @@
           }
         }
       }
-
-    
     }
   }
   a {
@@ -71,9 +103,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 700px;
+    left: 49%;
     position: absolute;
     bottom: 30px;
+
+    @include mobile {
+      left: 47%;
+      bottom: 65px;
+    }
 
     img {
       width: 30px;
