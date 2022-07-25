@@ -24,6 +24,7 @@ function App() {
         <Projects />
         <Resume />
         <Contact />
+        
       </div>
 
       <Footer />

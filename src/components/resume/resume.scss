@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .resume {
   background-color: white;
   display: flex;
@@ -7,6 +9,13 @@
   h1 {
     margin-bottom: 80px;
     font-size: 50px;
+
+    @include mobile {
+      overflow: hidden;
+      font-size: 35px;
+      margin-bottom: 60px;
+      margin-top: 20px;
+    }
   }
 
   .container {
@@ -17,6 +26,8 @@
     justify-content: center;
     flex-direction: column;
 
+    
+
     .item {
       width: 500px;
       height: 100%;
@@ -25,6 +36,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile {
+        width: 90vw;
+        height: 90%;
+      }
+      
 
       .content {
         display: flex;

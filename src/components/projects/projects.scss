@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .projects {
   background-color: white;
   display: flex;
@@ -8,6 +10,13 @@
   h1 {
     font-size: 50px;
     //overflow: hidden;
+
+    @include mobile {
+      overflow: hidden;
+      font-size: 35px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
   }
 
   .container {
@@ -17,6 +26,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include mobile {
+    }
 
     .card {
       width: 450px;
@@ -34,10 +46,22 @@
         transform: scale(1.1);
       }
 
+      @include mobile {
+        overflow: hidden;
+        width: 325px;
+        height: 46%;
+        margin: 10px 0;
+      }
+
       .center {
         img {
           width: 425px;
           height: 250px;
+
+          @include mobile {
+            width: 300px;
+            height: 150px;
+          }
         }
       }
 
@@ -68,6 +92,10 @@
   // down-arrow
   a {
     margin-top: 15px;
+
+    @include mobile {
+      margin-top: 30px;
+    }
 
     img {
       width: 30px;
