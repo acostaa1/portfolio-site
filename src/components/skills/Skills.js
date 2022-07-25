@@ -9,10 +9,11 @@ export default function Skills() {
 
   const list = [
     {
+      num: 1,
       id: 'proficient',
       title: 'Proficient',
     },
-    { id: 'learning', title: 'Learning' },
+    { num: 2, id: 'learning', title: 'Learning' },
   ];
 
   useEffect(() => {
@@ -34,6 +35,7 @@ export default function Skills() {
       <ul>
         {list.map((item) => (
           <SkillsList
+            key={item.num}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -43,7 +45,7 @@ export default function Skills() {
       </ul>
       <div className="container">
         {skills.map((skill) => (
-          <div className="item">
+          <div key={skill.id} className="item">
             <img src={skill.img} alt="" />
             <h3>{skill.name}</h3>
           </div>

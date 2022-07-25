@@ -11,8 +11,8 @@
     // justify-content: center;
 
     .profile-pic {
-      width: 600px;
-      height: 600px;
+      width: 550px;
+      height: 550px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,20 +63,26 @@
         }
       }
 
-      a {
-        position: absolute;
-        bottom: 10px;
+    
+    }
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 700px;
+    position: absolute;
+    bottom: 30px;
 
-        img {
-          width: 30px;
-          animation: arrowBlink 2s infinite;
-        }
+    img {
+      width: 30px;
+      animation: arrowBlink 2s infinite;
+    }
 
-        @keyframes arrowBlink {
-          100% {
-            opacity: 0;
-          }
-        }
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
       }
     }
   }

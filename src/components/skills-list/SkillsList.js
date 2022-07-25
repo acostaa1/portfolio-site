@@ -4,7 +4,7 @@ import './skillsList.scss';
 
 export default function SkillsList({title, active, setSelected, id}) {
   return (
-    <li className= {active ? "skills_list active" : "skills_list"} onClick = {()=> setSelected(id)}>
+    <li  className= {active ? "skills_list active" : "skills_list"} onClick = {()=> setSelected(id)}>
       {title}
     </li>
   );

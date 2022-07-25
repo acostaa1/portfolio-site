@@ -8,7 +8,7 @@ export default function Projects() {
       <h1>Projects</h1>
       <div className="container">
         {projects.map((project) => (
-          <div className="card">
+          <div key= {project.id} className="card">
             <div className="top">
               <h2>{project.name}</h2>
             </div>

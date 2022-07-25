@@ -1,3 +1,64 @@
 .contact {
-  background-color: orange;
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 80px;
+    font-size: 50px;
+  }
+  .container {
+    width: 85%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    flex-wrap: wrap;
+  
+
+    .item {
+      width: 220px;
+      height: 170px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all .5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  //up-arrow
+  .arrow {
+    margin-top: 75px;
+
+    img {
+      width: 30px;
+      transform:rotate(180deg);
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
 }

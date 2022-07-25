@@ -10,14 +10,15 @@ export default function About() {
           <h2>Thank you for stopping by!</h2>
           <div className="content">
             <p>
-              My coding journey began when I pitched an idea to help everyday
-              folks maximize points through their credit cards, at a Tech-Stars
-              Start-Up Weekend in NYC. During this event I realized how powerful
-              software engineering is; being able to create something from
-              scratch with a team over a short period of time was truly an
-              amazing feeling. Winning second place also felt great! After
-              attempting to build out my own curriculum to learn how to code, I
-              decided to pursue a certificate at Fullstack Academy.
+              My coding journey began at a Tech-Stars Start-Up Weekend in NYC
+              when I pitched an idea to help everyday folks maximize their
+              credit card points, and see how their friends were leveraging
+              their points. During this event I realized how powerful software
+              engineering is. Being able to create something from scratch with
+              a team over a short period of time was truly an amazing feeling--
+              winning second place also felt great! After attempting to build
+              out my own curriculum to learn how to code, I decided to pursue a
+              certificate at Fullstack Academy.
             </p>
             <br></br>
             <p>
@@ -30,7 +31,9 @@ export default function About() {
             <p>
               When I'm not at my computer clacking away, you can find me reading
               a book, probably something by Michael Lewis or Ben Mezrich,
-              playing with our cat, Cleo, or trying to find a poker table. (I'm also currently watching Better Call Saul).
+              playing with our cat, Cleo, or trying to find a seat at poker table. (I'm
+              also currently watching{' '}
+              <span className="italic">Better Call Saul</span>).
             </p>
             <br></br>
           </div>
