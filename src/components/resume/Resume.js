@@ -11,8 +11,8 @@ export default function Resume() {
             <h2>Check out my resume below!</h2>
             <a
               target="_blank"
-              rel="noreferrer"
-              href="https://drive.google.com/file/d/16kTzg-LyKGCNxaDyIED2SVRn-tFKjzKQ/view?usp=sharing"
+              type="application/pdf"
+              href="Angel_Acosta_Dev_Resume_2022.pdf"
             >{`export default const PDF`}</a>
           </div>
         </div>
