@@ -3,11 +3,20 @@ const app = express();
 const path = require('path');
 
 const startUp = () => {
-  const port = process.env.PORT || 3000;
-}
+  try {
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+      console.log(`listening on port ${port}...`);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 startUp();
 
-app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+);
 
-app.use("/public", express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'build')));
