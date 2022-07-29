@@ -7,7 +7,7 @@ import About from './components/about-me/About';
 import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact-me/Contact';
-import Footer from './components/footer/Footer';
+// import Footer from './components/footer/Footer';
 import Menu from './components/menu/Menu';
 import Resume from './components/resume/Resume';
 
@@ -27,7 +27,7 @@ function App() {
         
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
