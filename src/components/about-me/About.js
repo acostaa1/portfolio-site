@@ -12,7 +12,7 @@ export default function About() {
             <p>
               My coding journey began at a Tech-Stars Start-Up Weekend in NYC
               when I pitched an idea to help everyday folks maximize their
-              credit card points, and see how their friends were leveraging
+              credit card points and see how their friends were leveraging
               their points. During this event I realized how powerful software
               engineering is. Being able to create something from scratch with
               a team over a short period of time was truly an amazing feeling--
@@ -23,7 +23,7 @@ export default function About() {
             <br></br>
             <p>
               Professionally, I have over 5 years experience working in
-              Financial Services, specifically in corportate goverannce and
+              Financial Services, specifically in corporate goverance and
               regulatory affairs. I am interested in continuing to explore
               technologies that shape financial markets, including Blockchain.
             </p>
