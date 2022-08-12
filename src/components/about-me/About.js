@@ -23,7 +23,7 @@ export default function About() {
             <br></br>
             <p>
               Professionally, I have over 5 years experience working in
-              Financial Services, specifically in corporate goverance and
+              Financial Services, specifically in corporate governance and
               regulatory affairs. I am interested in continuing to explore
               technologies that shape financial markets, including Blockchain.
             </p>
