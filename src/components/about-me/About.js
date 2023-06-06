@@ -13,7 +13,7 @@ export default function About() {
               My coding journey began at a Tech-Stars Start-Up Weekend in NYC
               when I pitched an idea to help everyday folks maximize their
               credit card points and see how their friends were leveraging
-              their points. During this event I realized how powerful software
+              their points. During this event I realized how powerful and versatile software
               engineering is. Being able to create something from scratch with
               a team over a short period of time was truly an amazing feeling--
               winning second place also felt great! After attempting to build
