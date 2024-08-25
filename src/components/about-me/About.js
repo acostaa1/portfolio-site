@@ -22,9 +22,9 @@ export default function About() {
             </p>
             <br></br>
             <p>
-              Professionally, I have over 5 years experience working in
+              Professionally, I have over 7 years experience working in
               Financial Services, specifically in corporate governance and
-              regulatory affairs. I am interested in continuing to explore
+              regulatory affairs, as well as one year as a Software Engineer. I am interested in continuing to explore
               technologies that shape financial markets, including Blockchain.
             </p>
             <br></br>
@@ -33,7 +33,7 @@ export default function About() {
               a book, probably something by Michael Lewis or Ben Mezrich,
               playing with our cat, Cleo, or trying to find a seat at poker table. (I'm
               also currently watching{' '}
-              <span className="italic">Better Call Saul</span>).
+              <span className="italic">Bel Air</span>).
             </p>
             <br></br>
           </div>
